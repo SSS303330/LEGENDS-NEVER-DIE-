@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200;1,400;1,900&family=Poppins:wght@300&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+ 
+body{
+    background: rgb(37, 37, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+/*-----SIDE BAR----*/
+.wrapper{
+    display: flex;
+    
+    
+}
+/* side bar cuadro */
+.wrapper .sidebar{
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background: rgb(22, 22, 22);
+   
+  
+}
+/* h2 side bar */
+.wrapper .sidebar h2{
+    color:rgb(202, 202, 202);
+    text-align: center;
+    margin-bottom: 30px; /*separar de los iconos */
+}
+/* separar content Side Bar / lineas de separacion */
+.wrapper .sidebar ul li{
+    padding: 18px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    border-top: 1px solid rgb(51, 51, 51) ;
+}
+
+.wrapper .sidebar ul li a{
+    color: rgb(197, 197, 197);
+    display: block;
+}
+/*espaciado icon letra side bar */
+.wrapper .sidebar ul li a i{
+    width: 25px;
+}
+/* hover bloques side bar */
+.wrapper .sidebar ul li:hover{
+    background: rgb(47, 47, 47);
+    border-left: 3px solid rgb(172, 172, 172);
+}
+
+.wrapper .sidebar ul li:hover a{ /*hover texto/icon al seleccionar */ 
+    color: rgb(255, 255, 255);
+}
+/*REDES SIDE BAR */
+.wrapper .sidebar .social-media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+/*redes bloque sidebar */
+.wrapper .sidebar .social-media a{
+    display: block;
+    width: 40px;
+    background: rgb(31, 31, 31);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color:rgb(175, 175, 175);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    
+}
+/* hover redes icon / box */
+.wrapper .sidebar .social-media a:hover{
+    background: rgb(46, 46, 46);
+}
+.wrapper .sidebar .social-media a:hover{
+    color: rgb(255, 255, 255);
+}
+/*------SIDE BAR ------*/
+/* Barra superior */
+.wrapper .main-content{
+    width: 500px;
+    margin-left: 200px;
+    border: 1px solid red;
+}
+
+.wrapper .main-content .header{
+    padding: 32px;
+    background: rgb(134, 134, 134);
+    color:rgb(194, 194, 194);
+   border-bottom: 2px solid rgb(78, 78, 78);  
+   
+}
+
+/*--------CONTENIDO INICIO CARDS------------*/
+
+.container-card{
+    width: 90%;
+    height: 800px;
+    display: flex;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    justify-content: space-between;
+
+    
+   
+    
+}
+.card{
+    background: rgb(41, 41, 41);
+}
+
+/* Efectos Cards borde/transition */
+.container-card .card{
+    width: 210px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+   
+}
+
+.container-card .card:hover{
+    transform: translate(-3px); /*px que desplazan las cards al select*/
+    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+}
+/* tamaño img */ 
+.container-card .card img{
+    width: 150px;
+    height: 150px;
+}
+
+.container-card .card h4{
+    font-weight: 600px;
+    color: #fff;
+}
+
+.container-card .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+.container-card .card a{
+    font-weight: 500px;
+    text-decoration: none;
+    color:#fff;
+}
+/* Encabezados albums */
+.h3-text{
+    color:#fff ;
+    float: center;
+    align-content: center;
+    margin-left: 12%;
+    margin-top: 25px;;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

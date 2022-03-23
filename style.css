@@ -1,0 +1,171 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Background home*/
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.90)),url(/Image/fondo.jpg);
+    background-position: center center ;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*  Menu de navegacion */
+.menu{
+    float: right;
+    list-style: none;
+
+}
+
+.menu li{
+    width: 300px; /* widht menu */
+    width: 300px;
+    line-height: 85px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    float: left;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1.2px solid transparent;
+    transition: all 0.2s;
+}
+/*  linea debajo del texto al clickear*/
+.menu li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.logoj{
+    padding: 12px;
+    width: 10%;
+    float: left;
+    display: flex;
+    
+
+}
+/* Escuchar Ahora */
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align:center;
+}
+
+.banner-text h2{
+    font-family:Critter;
+    margin:0;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* Boton centro */ 
+.banner-text a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-size: 18px;
+    padding: 12px 30px;
+    color: #fff;
+    display:inline-block;
+    margin-top: 5%;
+    font-family: poppins;
+}
+
+.banner-text a:hover{
+    border-color: #000;
+    background: #fff;
+    color: #000;
+    transition: .5s;
+    
+} 
+
+/* Footer */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background: rgb(8, 8, 8);
+    height: auto;
+    width: 100vw;
+    font-family:"open Sans";
+    padding-top: 40px;
+    color:#fff;
+   
+}
+
+.footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*espaciados de texto */ 
+
+.footer-content h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 1.6rem;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.socials{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content:2rem 0 5rem 0;
+}
+/*espaciado icons socials*/
+.socials li{
+    margin: 0 19px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 21px;/*tamaño icons*/
+    transition: color .3s ease;/*degradado al clickear*/
+}
+
+.socials a:hover i{
+    color: rgb(126, 126, 126);
+}
+/* Copyright */
+.footer-bottom{
+    background:rgb(8, 8,8);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 16px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+   
+}
