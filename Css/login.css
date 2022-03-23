@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-repeat: none;
+  
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.90)),url(/Image/fondo2.jpg)  ;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/* contenedor blanco */
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    display: flex;
+    width: 650px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0, .2 );
+}
+
+.register .login{
+    flex: 1;
+}
+
+.register{
+    padding: 70px;
+    position: relative;
+}
+
+.register h2{
+    color: #797979;
+    margin-bottom: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register input{
+width: 100%;
+padding: 5px;
+font-size: 16px;
+margin-bottom: 25px; /* espaciado categorias formulario */
+border-top-style: none;
+border-left-style: none;
+border-right-style: none;
+border-bottom: 1px solid #a8a8a8;
+color: #333; /* boton registrarse */
+
+}
+   /*quitar borde negro al selecionar cuadro*/
+.register input:active,
+.register input:focus{
+    outline: none;
+}
+/*boton registrarse formulario */ 
+.register .submit{
+    width: auto;
+    padding: 10px;
+    background: rgb(187, 187, 187);
+    font-size: 12px;
+    box-shadow:0 0 3px 0 rgba(0, 0, 0,.2);
+    cursor:pointer;
+    transition: .2seg;
+}
+/* hover boton registrarse formulario*/
+.register .submit:hover{
+    background: rgb(195, 195, 195);
+}
+/* Esfera decorativa = */
+.register::after{
+    content: ' =';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%; /* esfera */
+    right: -23px;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transform:translateY(-50%);/* centrar objeto */
+    box-shadow: -1px 2px 3px 1px rgba(0, 0, 0,.2);
+    color: #7c7c7c;
+}
+
+.login{ /* background formulario login */
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.60)),url(/Image/floginnn.jpg);;
+    width: 950px;
+    padding: 40px;
+}
+
+.login h2{
+    color: #fff;
+    margin-bottom: 45px;
+    margin-top: 33px;
+}
+/* botones redes login*/
+.login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px rgb(0,0,0, .2);
+    cursor: pointer;
+    position: relative;
+}
+.login button i{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+/*botones login acceder redes */
+.login .fb{
+    background: #313131;
+    border-style: none;
+    color: #fff;
+}
+.login .fb:hover{
+    background: rgb(172, 172, 172);
+    color:#252525;
+}
+.login .tw{
+    background: #252525;
+    border-style: none;
+    color: #fff;
+}
+.login .tw:hover{
+    background: rgb(172, 172, 172);
+    color:#252525;
+}
+.login .gg{
+    background:#252525;
+    border-style: none;
+    color: #fff;
+}
+.login .gg:hover{
+    background: rgb(172, 172, 172);
+    color:#313131
+}
+
+/*responsive*/
+@media only screen and (max-width:540px){
+    .login-container{
+        display: block;
+    }
+    .register .login{
+        flex: none;
+    }
+    /* rotar esfera decorativa */
+    .register::after{
+        top:unset;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background: rgb(8, 8, 8);
+    height: auto;
+    width: 100vw;
+    font-family:"open Sans";
+    padding-top: 40px;
+    color:#fff;
+   
+}
+
+.footer-content{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*espaciados de texto */ 
+
+.footer-content h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 1.6rem;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.socials{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content:2rem 0 5rem 0;
+}
+/*espaciado icons socials*/
+.socials li{
+    margin: 0 19px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 21px;/*tamaño icons*/
+    transition: color .3s ease;/*degradado al clickear*/
+}
+
+.socials a:hover i{
+    color: rgb(126, 126, 126);
+}
+/* Copyright */
+.footer-bottom{
+    background:rgb(8, 8,8);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 16px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+   
+}
