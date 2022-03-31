@@ -111,17 +111,15 @@ body{
 
 .container-card{
     width: 90%;
-    height: 800px;
+    height: 280px;
     display: flex;
     margin-left: 10%;
     flex-wrap: wrap;
     padding-top: 25px;
     justify-content: space-between;
 
-    
-   
-    
 }
+
 .card{
     background: rgb(41, 41, 41);
 }
@@ -156,7 +154,7 @@ body{
 
 .container-card .card p{
     padding: 0 1rem;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300px;
     color: #fff;
 }
@@ -172,7 +170,13 @@ body{
     float: center;
     align-content: center;
     margin-left: 12%;
-    margin-top: 25px;;
-    font-size: 18px;
+    margin-top: 25px;
+    font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.h4-text{
+    color:#fff ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
